@@ -1,3 +1,9 @@
+/**
+ * Imports Express and creates an app instance.
+ * Sets the port to use based on environment variable or default.
+ * Configures middleware for static assets, parsing request bodies,
+ * and routing. Starts listening on the configured port.
+ */
 const express = require('express');
 
 const app = express();

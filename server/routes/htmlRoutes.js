@@ -1,3 +1,6 @@
+/**
+ * Serves the index.html file for the root route.
+ */
 const path = require('path');
 
 module.exports = (app) =>
