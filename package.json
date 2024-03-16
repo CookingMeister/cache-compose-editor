@@ -1,7 +1,7 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "cached text editor",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\"",
@@ -11,8 +11,8 @@
     "install": "",
     "client": ""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["text editor, cache, indexDb, jate"],
+  "author": "CookingMeister",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

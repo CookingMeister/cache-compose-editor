@@ -1,10 +1,13 @@
+/**
+ * Webpack configuration file.
+ * Exports a function that returns the configuration object.
+ * Includes plugins for HTML, service worker, manifest.
+ * Sets up rules for CSS and JS.
+ */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
-
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
 
 module.exports = () => {
   return {
@@ -17,7 +20,7 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [  // my code inside plugin
+    plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'J.A.T.E.',
@@ -32,7 +35,6 @@ module.exports = () => {
         theme_color: '#ffffff',
         start_url: './',
         publicPath: './',
-        // crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -49,7 +51,6 @@ module.exports = () => {
 
     module: {
       rules: [
-        //  my code inside rules
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],

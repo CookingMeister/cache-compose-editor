@@ -1,4 +1,11 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+/**
+ * Configures Workbox routing and caching strategies.
+ * - Precaches files listed in precache manifest.
+ * - Uses CacheFirst strategy for page navigation requests.
+ * - Uses StaleWhileRevalidate strategy for asset requests.
+ * - Sets up cache expiration.
+ */
+const { warmStrategyCache } = require('workbox-recipes');
 const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
@@ -26,7 +33,6 @@ warmStrategyCache({
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
-// TODO: Implement asset caching    // new code
 registerRoute(
   ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   new StaleWhileRevalidate({
@@ -38,9 +44,3 @@ registerRoute(
     ],
   })
 );
-
-// offlineFallback({   // new code
-//   cacheName: 'offline',
-//   match: ({ request }) => request.mode === 'navigate',
-//   fallbackURL: '/offline.html',
-// });
