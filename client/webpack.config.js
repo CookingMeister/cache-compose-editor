@@ -31,8 +31,9 @@ module.exports = () => {
         name: 'Just Another Text Editor',
         short_name: 'J.A.T.E.',
         description: 'Edit your text files with ease!',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        id: "/",
         start_url: './',
         publicPath: './',
         icons: [
