@@ -45,6 +45,20 @@ This is a versatile text editor that supports authoring and editing text documen
 
 The following image shows the web application's appearance and functionality:
 
+![Chrome Browser Text Editor](img/img1.png)
+
+App Manifest:
+
+![Chrome Dev Tools App Manifest](img/manifest.png)
+
+Service Worker:
+
+![Chrome Dev Tools Service Worker](img/service-worker.png)
+
+IndexedDB:
+
+![Chrome Dev Tools IndexedDB](img/indexedDB.png)
+
 ## Live Site
 
 A link to the deployed PWA can be found [here](www.).
