@@ -6,29 +6,41 @@
 
 This progressive web app (PWA) text editor provides a robust platform for note-taking and code snippet management with offline capabilities and data persistence.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Features](#features)
+- [Usage](#usage)
+- [Mock-up](#mock-up)
+- [Live Site](#live-site)
+- [Credits](#credits)
+- [Tests](#tests)
+- [Questions](#questions)
+- [License](#license)
+
 ## Installation
 
-### To install and run this locally
+- ### To install and run this locally
 
-- Clone this repository.
+  - Clone this repository.
 
-- Install multiple directory dependencies: `npm run install`
+  - Install multiple directory dependencies: `npm run install`
 
-- Start the application: `npm start`.
+  - Start the application: `npm start`.
 
-- (Optionally) Start in development mode: `npm run start:dev`.
+  - (Optionally) Start in development mode: `npm run start:dev`.
 
-The PWA will now be running at [http://localhost:3000](http://localhost:3000).
+- The PWA will now be running at [http://localhost:3000](http://localhost:3000).
 
-- Other scripts can be found in the root directory package.json file for development purposes.
+  - Other scripts can be found in the root directory package.json file for development purposes.
 
-### To install the editor as a PWA
+- ### To install the editor as a PWA
 
-- Visit the deployed site in a browser that supports service workers.
+  - Visit the deployed site in a browser that supports service workers.
 
-- Click the install button and follow the prompt to add the app to your device.
+  - Click the install button and follow the prompt to add the app to your device.
 
-The editor will now be available, even offline, as a standalone browser app and loads faster on subsequent visits.
+- The editor will now be available, even offline, as a standalone browser app and loads faster on subsequent visits.
 
 ## Features
 
@@ -61,11 +73,15 @@ IndexedDB:
 
 ## Live Site
 
-A link to the deployed PWA can be found [here](www.).
+A link to the deployed PWA can be found [here](https://cache-compose-editor.onrender.com).
 
 ## Credits
 
 This app was created by [CookingMeister](https://github.com/CookingMeister) on criteria from the University of New Brunswick's [edX Coding Bootcamp](https://unb.ca/cel/bootcamps/coding.html) program with starter source code from [here](https://github.com/coding-boot-camp/cautious-meme). Program materials and [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) were referenced for this API.
+
+## Tests
+
+Tests can be done by using the Lighthouse plugin for Chrome Dev Tools.
 
 ## Questions
 
